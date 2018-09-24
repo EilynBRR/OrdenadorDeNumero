@@ -1,0 +1,145 @@
+body{
+	background: #EFFBF8;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#container{
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}	
+
+h1, h2{
+	color: #086A87;
+}
+
+header div h1{
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+	padding: 20px;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color:#1d1d1d;
+}
+
+nav ul li{
+	display:inline-block;
+	color: white;
+	cursor: pointer;
+	margin-right: 20px;
+	padding: 10px;
+	font-weight:bold;
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	border-radius: 5px;
+	background:#086A87;
+}
+
+nav ul li:hover {
+	background: #1d1d1d;
+	color:white;
+	border-radius: 5px;
+	font-weight:bold;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color: #fff;
+}
+#center{
+	background: #1d1d1d;
+	color: #fff;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+#result{
+	background: #1d1d1d;
+	color: #fff;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+	display: none;
+}
+
+#btn, #btn_reset{
+	background-color: #fff;
+	color: #0174DF;
+	border: none;
+	padding: 4px;
+	margin: 20px;
+	cursor: pointer;
+	font-weight:bold;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#btn:hover{
+	background: #086A87;
+	color: #fff; 
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#btn_reset:hover{
+	background: #086A87;
+	color: #fff; 
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px 0px 10px 0px;
+	background-color: #1d1d1d;
+	text-align: center;
+}
+
+footer a {
+	color: #fff;
+}
+
+
+/* pantalla maximo 980px */
+@media screen and (max-width:980px) {
+	#container {
+		width:98%;
+	}
+	#result{
+		width: 98%;
+	}
+
+}
+
+/* pantalla maximo 700px */
+@media screen and (max-width:700px) {
+	#container {
+		width:96%;
+	}
+	#center {
+		float:none;
+		width:96%;
+		font-size:1.2em;
+	}
+	#result {
+		width:96%;
+	}
+}
+
+
+/* pantalla maximo 480px */
+@media screen and (max-width:480px) {
+	#container {
+		width:94%;
+	}
+	#center {
+		font-size:1.5em;
+		width:94%;
+	}
+	#result{
+		width: 94%;
+	}
+}

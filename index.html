@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordenador de Serie</title>
+    <script src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div>
+          <h1>Ordenador de Serie</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/eilyn-rivero">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="center">
+        <form action="#" onsubmit="get_array(); return false;">
+          <br>
+          <div id="inner_header">
+            <h2>Ingrese el número a ordenar</h2>
+          </div>
+          <br>
+          <input type="text" id="number" name="number" placeholder="Ej: 123" onChange="return validate_numberExpReg(this.value);" required>
+          <br>
+          <input type="submit" id="btn" value="Ordenar" >
+          <input type="reset" id="btn_reset" value="Reestablecer" onclick="reset_result()" >
+        </form>
+      </div>
+      <br><br>
+      <div id="result">
+        El conjunto de números ordenado de forma ascendente es:
+        <div id="arrayResult"></div>
+      </div>
+    </div>
+    <footer>
+      <a>Elaborado por Eilyn Rivero</a>
+    </footer>
+  </body>
+</html>
